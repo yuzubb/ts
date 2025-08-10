@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+            <p>Welcome to the Web Terminal!</p>
+            <p>Type 'help' for a list of commands.</p>
+        </div>
+        <div class="input-line">
+            <span class="prompt">guest@web-terminal:~$</span>
+            <input type="text" id="command-input" autofocus>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
