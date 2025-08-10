@@ -1,0 +1,71 @@
+body {
+    background-color: #333;
+    color: #eee;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.terminal {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-header {
+    background-color: #555;
+    padding: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.terminal-body {
+    padding: 15px;
+    overflow-y: auto;
+    flex-grow: 1;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.input-line {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #555;
+}
+
+.prompt {
+    color: #00ff00;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+
+#command-input {
+    background: transparent;
+    border: none;
+    color: #eee;
+    caret-color: #eee;
+    outline: none;
+    flex-grow: 1;
+    font-size: 1em;
+}
